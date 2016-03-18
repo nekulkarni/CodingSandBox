@@ -1,0 +1,10 @@
+# view AndroidManifest.xml #generated:16
+-keep class com.techblogon.aidlexample.AIDLActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.techblogon.aidlexample.AddService { <init>(...); }
+
+# onClick res/layout/activity_aidl.xml #generated:11
+# onClick res/layout/activity_aidl.xml #generated:51
+-keepclassmembers class * { *** onClickButtonResult(...); }
+
