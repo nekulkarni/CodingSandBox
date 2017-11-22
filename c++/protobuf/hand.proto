@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package atheer;
+package myprojectnamespace;
 
 option optimize_for = LITE_RUNTIME;
 
@@ -9,7 +9,7 @@ message HandEvent {
 }
 
 message Hand {
-  repeated Finger fingers = 2;
+  repeated Finger fingers = 1;
 }
 
 message Finger {

@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
-#include <tuple>
 
 #include "hand.pb.h"
 
-void populateHandEvent(atheer::HandEvent& event) {
+void populateHandEvent(myprojectnamespace::HandEvent& event) {
     auto hand = event.add_hands();
 
     for (int i = 0; i < 5; ++i) {
@@ -16,7 +15,7 @@ void populateHandEvent(atheer::HandEvent& event) {
     }
 }
 
-void printHandEvent(const atheer::HandEvent& event) {
+void printHandEvent(const myprojectnamespace::HandEvent& event) {
     auto hands = event.hands();
     for (int i = 0; i < hands.size(); ++i) {
         std::cout << "hand #" << i << std::endl;
@@ -35,14 +34,14 @@ void printHandEvent(const atheer::HandEvent& event) {
 
 int main(int argc, char const* argv[]) {
     // 1. make hand event and serialize it
-    atheer::HandEvent event_out;
+    myprojectnamespace::HandEvent event_out;
     populateHandEvent(event_out);
     std::string bufferStr;
     auto success = event_out.SerializeToString(&bufferStr);
     std::cout << "Serialized string: " << bufferStr << std::endl;
 
     // 2. now deserialize the buffer to get the hand event back
-    atheer::HandEvent event_in;
+    myprojectnamespace::HandEvent event_in;
     event_in.ParseFromArray((void*)bufferStr.data(), bufferStr.size());
     printHandEvent(event_in);
 
