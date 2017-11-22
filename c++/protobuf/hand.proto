@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package atheer;
+
+option optimize_for = LITE_RUNTIME;
+
+message HandEvent {
+  repeated Hand hands = 1;
+}
+
+message Hand {
+  repeated Finger fingers = 2;
+}
+
+message Finger {
+  int32 id = 1;
+  Point3D tip = 2;
+}
+
+message Point3D {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
