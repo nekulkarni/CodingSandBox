@@ -4,4 +4,4 @@ all:
 	# at https://github.com/google/protobuf/blob/master/src/README.md
 	#
 	protoc hand.proto --cpp_out=.
-	g++ main.cpp hand.pb.cc -std=c++11 -lprotobuf
+	g++ main.cpp hand.pb.cc -std=c++11 -lprotobuf-lite

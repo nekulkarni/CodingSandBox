@@ -14,7 +14,7 @@
 #include <google/protobuf/io/zero_copy_stream_impl_lite.h>
 // @@protoc_insertion_point(includes)
 
-namespace atheer {
+namespace myprojectnamespace {
 class HandEventDefaultTypeInternal {
 public:
  ::google::protobuf::internal::ExplicitlyConstructed<HandEvent>
@@ -67,8 +67,8 @@ void TableStruct::InitDefaultsImpl() {
   ::google::protobuf::internal::OnShutdownDestroyMessage(
       &_Finger_default_instance_);_Point3D_default_instance_._instance.DefaultConstruct();
   ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_Point3D_default_instance_);_Finger_default_instance_._instance.get_mutable()->tip_ = const_cast< ::atheer::Point3D*>(
-      ::atheer::Point3D::internal_default_instance());
+      &_Point3D_default_instance_);_Finger_default_instance_._instance.get_mutable()->tip_ = const_cast< ::myprojectnamespace::Point3D*>(
+      ::myprojectnamespace::Point3D::internal_default_instance());
 }
 
 void InitDefaults() {
@@ -101,7 +101,7 @@ HandEvent::HandEvent()
     protobuf_hand_2eproto::InitDefaults();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:atheer.HandEvent)
+  // @@protoc_insertion_point(constructor:myprojectnamespace.HandEvent)
 }
 HandEvent::HandEvent(const HandEvent& from)
   : ::google::protobuf::MessageLite(),
@@ -109,7 +109,7 @@ HandEvent::HandEvent(const HandEvent& from)
       hands_(from.hands_),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:atheer.HandEvent)
+  // @@protoc_insertion_point(copy_constructor:myprojectnamespace.HandEvent)
 }
 
 void HandEvent::SharedCtor() {
@@ -117,7 +117,7 @@ void HandEvent::SharedCtor() {
 }
 
 HandEvent::~HandEvent() {
-  // @@protoc_insertion_point(destructor:atheer.HandEvent)
+  // @@protoc_insertion_point(destructor:myprojectnamespace.HandEvent)
   SharedDtor();
 }
 
@@ -143,7 +143,7 @@ HandEvent* HandEvent::New(::google::protobuf::Arena* arena) const {
 }
 
 void HandEvent::Clear() {
-// @@protoc_insertion_point(message_clear_start:atheer.HandEvent)
+// @@protoc_insertion_point(message_clear_start:myprojectnamespace.HandEvent)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -162,13 +162,13 @@ bool HandEvent::MergePartialFromCodedStream(
               mutable_unknown_fields));
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_string, false);
-  // @@protoc_insertion_point(parse_start:atheer.HandEvent)
+  // @@protoc_insertion_point(parse_start:myprojectnamespace.HandEvent)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .atheer.Hand hands = 1;
+      // repeated .myprojectnamespace.Hand hands = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
@@ -192,21 +192,21 @@ bool HandEvent::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:atheer.HandEvent)
+  // @@protoc_insertion_point(parse_success:myprojectnamespace.HandEvent)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:atheer.HandEvent)
+  // @@protoc_insertion_point(parse_failure:myprojectnamespace.HandEvent)
   return false;
 #undef DO_
 }
 
 void HandEvent::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:atheer.HandEvent)
+  // @@protoc_insertion_point(serialize_start:myprojectnamespace.HandEvent)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .atheer.Hand hands = 1;
+  // repeated .myprojectnamespace.Hand hands = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->hands_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
@@ -215,16 +215,16 @@ void HandEvent::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:atheer.HandEvent)
+  // @@protoc_insertion_point(serialize_end:myprojectnamespace.HandEvent)
 }
 
 size_t HandEvent::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:atheer.HandEvent)
+// @@protoc_insertion_point(message_byte_size_start:myprojectnamespace.HandEvent)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // repeated .atheer.Hand hands = 1;
+  // repeated .myprojectnamespace.Hand hands = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->hands_size());
     total_size += 1UL * count;
@@ -248,7 +248,7 @@ void HandEvent::CheckTypeAndMergeFrom(
 }
 
 void HandEvent::MergeFrom(const HandEvent& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:atheer.HandEvent)
+// @@protoc_insertion_point(class_specific_merge_from_start:myprojectnamespace.HandEvent)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -258,7 +258,7 @@ void HandEvent::MergeFrom(const HandEvent& from) {
 }
 
 void HandEvent::CopyFrom(const HandEvent& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:atheer.HandEvent)
+// @@protoc_insertion_point(class_specific_copy_from_start:myprojectnamespace.HandEvent)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -280,39 +280,39 @@ void HandEvent::InternalSwap(HandEvent* other) {
 }
 
 ::std::string HandEvent::GetTypeName() const {
-  return "atheer.HandEvent";
+  return "myprojectnamespace.HandEvent";
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // HandEvent
 
-// repeated .atheer.Hand hands = 1;
+// repeated .myprojectnamespace.Hand hands = 1;
 int HandEvent::hands_size() const {
   return hands_.size();
 }
 void HandEvent::clear_hands() {
   hands_.Clear();
 }
-const ::atheer::Hand& HandEvent::hands(int index) const {
-  // @@protoc_insertion_point(field_get:atheer.HandEvent.hands)
+const ::myprojectnamespace::Hand& HandEvent::hands(int index) const {
+  // @@protoc_insertion_point(field_get:myprojectnamespace.HandEvent.hands)
   return hands_.Get(index);
 }
-::atheer::Hand* HandEvent::mutable_hands(int index) {
-  // @@protoc_insertion_point(field_mutable:atheer.HandEvent.hands)
+::myprojectnamespace::Hand* HandEvent::mutable_hands(int index) {
+  // @@protoc_insertion_point(field_mutable:myprojectnamespace.HandEvent.hands)
   return hands_.Mutable(index);
 }
-::atheer::Hand* HandEvent::add_hands() {
-  // @@protoc_insertion_point(field_add:atheer.HandEvent.hands)
+::myprojectnamespace::Hand* HandEvent::add_hands() {
+  // @@protoc_insertion_point(field_add:myprojectnamespace.HandEvent.hands)
   return hands_.Add();
 }
-::google::protobuf::RepeatedPtrField< ::atheer::Hand >*
+::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand >*
 HandEvent::mutable_hands() {
-  // @@protoc_insertion_point(field_mutable_list:atheer.HandEvent.hands)
+  // @@protoc_insertion_point(field_mutable_list:myprojectnamespace.HandEvent.hands)
   return &hands_;
 }
-const ::google::protobuf::RepeatedPtrField< ::atheer::Hand >&
+const ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand >&
 HandEvent::hands() const {
-  // @@protoc_insertion_point(field_list:atheer.HandEvent.hands)
+  // @@protoc_insertion_point(field_list:myprojectnamespace.HandEvent.hands)
   return hands_;
 }
 
@@ -330,7 +330,7 @@ Hand::Hand()
     protobuf_hand_2eproto::InitDefaults();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:atheer.Hand)
+  // @@protoc_insertion_point(constructor:myprojectnamespace.Hand)
 }
 Hand::Hand(const Hand& from)
   : ::google::protobuf::MessageLite(),
@@ -338,7 +338,7 @@ Hand::Hand(const Hand& from)
       fingers_(from.fingers_),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:atheer.Hand)
+  // @@protoc_insertion_point(copy_constructor:myprojectnamespace.Hand)
 }
 
 void Hand::SharedCtor() {
@@ -346,7 +346,7 @@ void Hand::SharedCtor() {
 }
 
 Hand::~Hand() {
-  // @@protoc_insertion_point(destructor:atheer.Hand)
+  // @@protoc_insertion_point(destructor:myprojectnamespace.Hand)
   SharedDtor();
 }
 
@@ -372,7 +372,7 @@ Hand* Hand::New(::google::protobuf::Arena* arena) const {
 }
 
 void Hand::Clear() {
-// @@protoc_insertion_point(message_clear_start:atheer.Hand)
+// @@protoc_insertion_point(message_clear_start:myprojectnamespace.Hand)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -391,16 +391,16 @@ bool Hand::MergePartialFromCodedStream(
               mutable_unknown_fields));
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_string, false);
-  // @@protoc_insertion_point(parse_start:atheer.Hand)
+  // @@protoc_insertion_point(parse_start:myprojectnamespace.Hand)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .atheer.Finger fingers = 2;
-      case 2: {
+      // repeated .myprojectnamespace.Finger fingers = 1;
+      case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_fingers()));
         } else {
@@ -421,39 +421,39 @@ bool Hand::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:atheer.Hand)
+  // @@protoc_insertion_point(parse_success:myprojectnamespace.Hand)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:atheer.Hand)
+  // @@protoc_insertion_point(parse_failure:myprojectnamespace.Hand)
   return false;
 #undef DO_
 }
 
 void Hand::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:atheer.Hand)
+  // @@protoc_insertion_point(serialize_start:myprojectnamespace.Hand)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .atheer.Finger fingers = 2;
+  // repeated .myprojectnamespace.Finger fingers = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->fingers_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
-      2, this->fingers(static_cast<int>(i)), output);
+      1, this->fingers(static_cast<int>(i)), output);
   }
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:atheer.Hand)
+  // @@protoc_insertion_point(serialize_end:myprojectnamespace.Hand)
 }
 
 size_t Hand::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:atheer.Hand)
+// @@protoc_insertion_point(message_byte_size_start:myprojectnamespace.Hand)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // repeated .atheer.Finger fingers = 2;
+  // repeated .myprojectnamespace.Finger fingers = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->fingers_size());
     total_size += 1UL * count;
@@ -477,7 +477,7 @@ void Hand::CheckTypeAndMergeFrom(
 }
 
 void Hand::MergeFrom(const Hand& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:atheer.Hand)
+// @@protoc_insertion_point(class_specific_merge_from_start:myprojectnamespace.Hand)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -487,7 +487,7 @@ void Hand::MergeFrom(const Hand& from) {
 }
 
 void Hand::CopyFrom(const Hand& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:atheer.Hand)
+// @@protoc_insertion_point(class_specific_copy_from_start:myprojectnamespace.Hand)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -509,39 +509,39 @@ void Hand::InternalSwap(Hand* other) {
 }
 
 ::std::string Hand::GetTypeName() const {
-  return "atheer.Hand";
+  return "myprojectnamespace.Hand";
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Hand
 
-// repeated .atheer.Finger fingers = 2;
+// repeated .myprojectnamespace.Finger fingers = 1;
 int Hand::fingers_size() const {
   return fingers_.size();
 }
 void Hand::clear_fingers() {
   fingers_.Clear();
 }
-const ::atheer::Finger& Hand::fingers(int index) const {
-  // @@protoc_insertion_point(field_get:atheer.Hand.fingers)
+const ::myprojectnamespace::Finger& Hand::fingers(int index) const {
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Hand.fingers)
   return fingers_.Get(index);
 }
-::atheer::Finger* Hand::mutable_fingers(int index) {
-  // @@protoc_insertion_point(field_mutable:atheer.Hand.fingers)
+::myprojectnamespace::Finger* Hand::mutable_fingers(int index) {
+  // @@protoc_insertion_point(field_mutable:myprojectnamespace.Hand.fingers)
   return fingers_.Mutable(index);
 }
-::atheer::Finger* Hand::add_fingers() {
-  // @@protoc_insertion_point(field_add:atheer.Hand.fingers)
+::myprojectnamespace::Finger* Hand::add_fingers() {
+  // @@protoc_insertion_point(field_add:myprojectnamespace.Hand.fingers)
   return fingers_.Add();
 }
-::google::protobuf::RepeatedPtrField< ::atheer::Finger >*
+::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger >*
 Hand::mutable_fingers() {
-  // @@protoc_insertion_point(field_mutable_list:atheer.Hand.fingers)
+  // @@protoc_insertion_point(field_mutable_list:myprojectnamespace.Hand.fingers)
   return &fingers_;
 }
-const ::google::protobuf::RepeatedPtrField< ::atheer::Finger >&
+const ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger >&
 Hand::fingers() const {
-  // @@protoc_insertion_point(field_list:atheer.Hand.fingers)
+  // @@protoc_insertion_point(field_list:myprojectnamespace.Hand.fingers)
   return fingers_;
 }
 
@@ -560,7 +560,7 @@ Finger::Finger()
     protobuf_hand_2eproto::InitDefaults();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:atheer.Finger)
+  // @@protoc_insertion_point(constructor:myprojectnamespace.Finger)
 }
 Finger::Finger(const Finger& from)
   : ::google::protobuf::MessageLite(),
@@ -568,12 +568,12 @@ Finger::Finger(const Finger& from)
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_tip()) {
-    tip_ = new ::atheer::Point3D(*from.tip_);
+    tip_ = new ::myprojectnamespace::Point3D(*from.tip_);
   } else {
     tip_ = NULL;
   }
   id_ = from.id_;
-  // @@protoc_insertion_point(copy_constructor:atheer.Finger)
+  // @@protoc_insertion_point(copy_constructor:myprojectnamespace.Finger)
 }
 
 void Finger::SharedCtor() {
@@ -584,7 +584,7 @@ void Finger::SharedCtor() {
 }
 
 Finger::~Finger() {
-  // @@protoc_insertion_point(destructor:atheer.Finger)
+  // @@protoc_insertion_point(destructor:myprojectnamespace.Finger)
   SharedDtor();
 }
 
@@ -611,7 +611,7 @@ Finger* Finger::New(::google::protobuf::Arena* arena) const {
 }
 
 void Finger::Clear() {
-// @@protoc_insertion_point(message_clear_start:atheer.Finger)
+// @@protoc_insertion_point(message_clear_start:myprojectnamespace.Finger)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -634,7 +634,7 @@ bool Finger::MergePartialFromCodedStream(
               mutable_unknown_fields));
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_string, false);
-  // @@protoc_insertion_point(parse_start:atheer.Finger)
+  // @@protoc_insertion_point(parse_start:myprojectnamespace.Finger)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -654,7 +654,7 @@ bool Finger::MergePartialFromCodedStream(
         break;
       }
 
-      // .atheer.Point3D tip = 2;
+      // .myprojectnamespace.Point3D tip = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
@@ -678,17 +678,17 @@ bool Finger::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:atheer.Finger)
+  // @@protoc_insertion_point(parse_success:myprojectnamespace.Finger)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:atheer.Finger)
+  // @@protoc_insertion_point(parse_failure:myprojectnamespace.Finger)
   return false;
 #undef DO_
 }
 
 void Finger::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:atheer.Finger)
+  // @@protoc_insertion_point(serialize_start:myprojectnamespace.Finger)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -697,7 +697,7 @@ void Finger::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->id(), output);
   }
 
-  // .atheer.Point3D tip = 2;
+  // .myprojectnamespace.Point3D tip = 2;
   if (this->has_tip()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessage(
       2, *this->tip_, output);
@@ -705,16 +705,16 @@ void Finger::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:atheer.Finger)
+  // @@protoc_insertion_point(serialize_end:myprojectnamespace.Finger)
 }
 
 size_t Finger::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:atheer.Finger)
+// @@protoc_insertion_point(message_byte_size_start:myprojectnamespace.Finger)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
 
-  // .atheer.Point3D tip = 2;
+  // .myprojectnamespace.Point3D tip = 2;
   if (this->has_tip()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -741,14 +741,14 @@ void Finger::CheckTypeAndMergeFrom(
 }
 
 void Finger::MergeFrom(const Finger& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:atheer.Finger)
+// @@protoc_insertion_point(class_specific_merge_from_start:myprojectnamespace.Finger)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_tip()) {
-    mutable_tip()->::atheer::Point3D::MergeFrom(from.tip());
+    mutable_tip()->::myprojectnamespace::Point3D::MergeFrom(from.tip());
   }
   if (from.id() != 0) {
     set_id(from.id());
@@ -756,7 +756,7 @@ void Finger::MergeFrom(const Finger& from) {
 }
 
 void Finger::CopyFrom(const Finger& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:atheer.Finger)
+// @@protoc_insertion_point(class_specific_copy_from_start:myprojectnamespace.Finger)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -779,7 +779,7 @@ void Finger::InternalSwap(Finger* other) {
 }
 
 ::std::string Finger::GetTypeName() const {
-  return "atheer.Finger";
+  return "myprojectnamespace.Finger";
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -790,16 +790,16 @@ void Finger::clear_id() {
   id_ = 0;
 }
 ::google::protobuf::int32 Finger::id() const {
-  // @@protoc_insertion_point(field_get:atheer.Finger.id)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Finger.id)
   return id_;
 }
 void Finger::set_id(::google::protobuf::int32 value) {
   
   id_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Finger.id)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Finger.id)
 }
 
-// .atheer.Point3D tip = 2;
+// .myprojectnamespace.Point3D tip = 2;
 bool Finger::has_tip() const {
   return this != internal_default_instance() && tip_ != NULL;
 }
@@ -807,28 +807,28 @@ void Finger::clear_tip() {
   if (GetArenaNoVirtual() == NULL && tip_ != NULL) delete tip_;
   tip_ = NULL;
 }
-const ::atheer::Point3D& Finger::tip() const {
-  const ::atheer::Point3D* p = tip_;
-  // @@protoc_insertion_point(field_get:atheer.Finger.tip)
-  return p != NULL ? *p : *reinterpret_cast<const ::atheer::Point3D*>(
-      &::atheer::_Point3D_default_instance_);
+const ::myprojectnamespace::Point3D& Finger::tip() const {
+  const ::myprojectnamespace::Point3D* p = tip_;
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Finger.tip)
+  return p != NULL ? *p : *reinterpret_cast<const ::myprojectnamespace::Point3D*>(
+      &::myprojectnamespace::_Point3D_default_instance_);
 }
-::atheer::Point3D* Finger::mutable_tip() {
+::myprojectnamespace::Point3D* Finger::mutable_tip() {
   
   if (tip_ == NULL) {
-    tip_ = new ::atheer::Point3D;
+    tip_ = new ::myprojectnamespace::Point3D;
   }
-  // @@protoc_insertion_point(field_mutable:atheer.Finger.tip)
+  // @@protoc_insertion_point(field_mutable:myprojectnamespace.Finger.tip)
   return tip_;
 }
-::atheer::Point3D* Finger::release_tip() {
-  // @@protoc_insertion_point(field_release:atheer.Finger.tip)
+::myprojectnamespace::Point3D* Finger::release_tip() {
+  // @@protoc_insertion_point(field_release:myprojectnamespace.Finger.tip)
   
-  ::atheer::Point3D* temp = tip_;
+  ::myprojectnamespace::Point3D* temp = tip_;
   tip_ = NULL;
   return temp;
 }
-void Finger::set_allocated_tip(::atheer::Point3D* tip) {
+void Finger::set_allocated_tip(::myprojectnamespace::Point3D* tip) {
   delete tip_;
   tip_ = tip;
   if (tip) {
@@ -836,7 +836,7 @@ void Finger::set_allocated_tip(::atheer::Point3D* tip) {
   } else {
     
   }
-  // @@protoc_insertion_point(field_set_allocated:atheer.Finger.tip)
+  // @@protoc_insertion_point(field_set_allocated:myprojectnamespace.Finger.tip)
 }
 
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -855,7 +855,7 @@ Point3D::Point3D()
     protobuf_hand_2eproto::InitDefaults();
   }
   SharedCtor();
-  // @@protoc_insertion_point(constructor:atheer.Point3D)
+  // @@protoc_insertion_point(constructor:myprojectnamespace.Point3D)
 }
 Point3D::Point3D(const Point3D& from)
   : ::google::protobuf::MessageLite(),
@@ -865,7 +865,7 @@ Point3D::Point3D(const Point3D& from)
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&z_) -
     reinterpret_cast<char*>(&x_)) + sizeof(z_));
-  // @@protoc_insertion_point(copy_constructor:atheer.Point3D)
+  // @@protoc_insertion_point(copy_constructor:myprojectnamespace.Point3D)
 }
 
 void Point3D::SharedCtor() {
@@ -876,7 +876,7 @@ void Point3D::SharedCtor() {
 }
 
 Point3D::~Point3D() {
-  // @@protoc_insertion_point(destructor:atheer.Point3D)
+  // @@protoc_insertion_point(destructor:myprojectnamespace.Point3D)
   SharedDtor();
 }
 
@@ -902,7 +902,7 @@ Point3D* Point3D::New(::google::protobuf::Arena* arena) const {
 }
 
 void Point3D::Clear() {
-// @@protoc_insertion_point(message_clear_start:atheer.Point3D)
+// @@protoc_insertion_point(message_clear_start:myprojectnamespace.Point3D)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -923,7 +923,7 @@ bool Point3D::MergePartialFromCodedStream(
               mutable_unknown_fields));
   ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
       &unknown_fields_string, false);
-  // @@protoc_insertion_point(parse_start:atheer.Point3D)
+  // @@protoc_insertion_point(parse_start:myprojectnamespace.Point3D)
   for (;;) {
     ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -983,17 +983,17 @@ bool Point3D::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:atheer.Point3D)
+  // @@protoc_insertion_point(parse_success:myprojectnamespace.Point3D)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:atheer.Point3D)
+  // @@protoc_insertion_point(parse_failure:myprojectnamespace.Point3D)
   return false;
 #undef DO_
 }
 
 void Point3D::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:atheer.Point3D)
+  // @@protoc_insertion_point(serialize_start:myprojectnamespace.Point3D)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1014,11 +1014,11 @@ void Point3D::SerializeWithCachedSizes(
 
   output->WriteRaw((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).data(),
                    static_cast<int>((::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size()));
-  // @@protoc_insertion_point(serialize_end:atheer.Point3D)
+  // @@protoc_insertion_point(serialize_end:myprojectnamespace.Point3D)
 }
 
 size_t Point3D::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:atheer.Point3D)
+// @@protoc_insertion_point(message_byte_size_start:myprojectnamespace.Point3D)
   size_t total_size = 0;
 
   total_size += (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()).size();
@@ -1051,7 +1051,7 @@ void Point3D::CheckTypeAndMergeFrom(
 }
 
 void Point3D::MergeFrom(const Point3D& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:atheer.Point3D)
+// @@protoc_insertion_point(class_specific_merge_from_start:myprojectnamespace.Point3D)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1069,7 +1069,7 @@ void Point3D::MergeFrom(const Point3D& from) {
 }
 
 void Point3D::CopyFrom(const Point3D& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:atheer.Point3D)
+// @@protoc_insertion_point(class_specific_copy_from_start:myprojectnamespace.Point3D)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1093,7 +1093,7 @@ void Point3D::InternalSwap(Point3D* other) {
 }
 
 ::std::string Point3D::GetTypeName() const {
-  return "atheer.Point3D";
+  return "myprojectnamespace.Point3D";
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1104,13 +1104,13 @@ void Point3D::clear_x() {
   x_ = 0;
 }
 float Point3D::x() const {
-  // @@protoc_insertion_point(field_get:atheer.Point3D.x)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Point3D.x)
   return x_;
 }
 void Point3D::set_x(float value) {
   
   x_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Point3D.x)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Point3D.x)
 }
 
 // float y = 2;
@@ -1118,13 +1118,13 @@ void Point3D::clear_y() {
   y_ = 0;
 }
 float Point3D::y() const {
-  // @@protoc_insertion_point(field_get:atheer.Point3D.y)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Point3D.y)
   return y_;
 }
 void Point3D::set_y(float value) {
   
   y_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Point3D.y)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Point3D.y)
 }
 
 // float z = 3;
@@ -1132,19 +1132,19 @@ void Point3D::clear_z() {
   z_ = 0;
 }
 float Point3D::z() const {
-  // @@protoc_insertion_point(field_get:atheer.Point3D.z)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Point3D.z)
   return z_;
 }
 void Point3D::set_z(float value) {
   
   z_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Point3D.z)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Point3D.z)
 }
 
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace atheer
+}  // namespace myprojectnamespace
 
 // @@protoc_insertion_point(global_scope)

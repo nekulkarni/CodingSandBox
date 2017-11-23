@@ -29,7 +29,7 @@
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 // @@protoc_insertion_point(includes)
-namespace atheer {
+namespace myprojectnamespace {
 class Finger;
 class FingerDefaultTypeInternal;
 extern FingerDefaultTypeInternal _Finger_default_instance_;
@@ -42,9 +42,9 @@ extern HandEventDefaultTypeInternal _HandEvent_default_instance_;
 class Point3D;
 class Point3DDefaultTypeInternal;
 extern Point3DDefaultTypeInternal _Point3D_default_instance_;
-}  // namespace atheer
+}  // namespace myprojectnamespace
 
-namespace atheer {
+namespace myprojectnamespace {
 
 namespace protobuf_hand_2eproto {
 // Internal implementation detail -- do not call these.
@@ -63,7 +63,7 @@ void InitDefaults();
 
 // ===================================================================
 
-class HandEvent : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:atheer.HandEvent) */ {
+class HandEvent : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:myprojectnamespace.HandEvent) */ {
  public:
   HandEvent();
   virtual ~HandEvent();
@@ -142,29 +142,29 @@ class HandEvent : public ::google::protobuf::MessageLite /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // repeated .atheer.Hand hands = 1;
+  // repeated .myprojectnamespace.Hand hands = 1;
   int hands_size() const;
   void clear_hands();
   static const int kHandsFieldNumber = 1;
-  const ::atheer::Hand& hands(int index) const;
-  ::atheer::Hand* mutable_hands(int index);
-  ::atheer::Hand* add_hands();
-  ::google::protobuf::RepeatedPtrField< ::atheer::Hand >*
+  const ::myprojectnamespace::Hand& hands(int index) const;
+  ::myprojectnamespace::Hand* mutable_hands(int index);
+  ::myprojectnamespace::Hand* add_hands();
+  ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand >*
       mutable_hands();
-  const ::google::protobuf::RepeatedPtrField< ::atheer::Hand >&
+  const ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand >&
       hands() const;
 
-  // @@protoc_insertion_point(class_scope:atheer.HandEvent)
+  // @@protoc_insertion_point(class_scope:myprojectnamespace.HandEvent)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::atheer::Hand > hands_;
+  ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand > hands_;
   mutable int _cached_size_;
   friend struct protobuf_hand_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
 
-class Hand : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:atheer.Hand) */ {
+class Hand : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:myprojectnamespace.Hand) */ {
  public:
   Hand();
   virtual ~Hand();
@@ -243,29 +243,29 @@ class Hand : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(
 
   // accessors -------------------------------------------------------
 
-  // repeated .atheer.Finger fingers = 2;
+  // repeated .myprojectnamespace.Finger fingers = 1;
   int fingers_size() const;
   void clear_fingers();
-  static const int kFingersFieldNumber = 2;
-  const ::atheer::Finger& fingers(int index) const;
-  ::atheer::Finger* mutable_fingers(int index);
-  ::atheer::Finger* add_fingers();
-  ::google::protobuf::RepeatedPtrField< ::atheer::Finger >*
+  static const int kFingersFieldNumber = 1;
+  const ::myprojectnamespace::Finger& fingers(int index) const;
+  ::myprojectnamespace::Finger* mutable_fingers(int index);
+  ::myprojectnamespace::Finger* add_fingers();
+  ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger >*
       mutable_fingers();
-  const ::google::protobuf::RepeatedPtrField< ::atheer::Finger >&
+  const ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger >&
       fingers() const;
 
-  // @@protoc_insertion_point(class_scope:atheer.Hand)
+  // @@protoc_insertion_point(class_scope:myprojectnamespace.Hand)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
-  ::google::protobuf::RepeatedPtrField< ::atheer::Finger > fingers_;
+  ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger > fingers_;
   mutable int _cached_size_;
   friend struct protobuf_hand_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
 
-class Finger : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:atheer.Finger) */ {
+class Finger : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:myprojectnamespace.Finger) */ {
  public:
   Finger();
   virtual ~Finger();
@@ -344,14 +344,14 @@ class Finger : public ::google::protobuf::MessageLite /* @@protoc_insertion_poin
 
   // accessors -------------------------------------------------------
 
-  // .atheer.Point3D tip = 2;
+  // .myprojectnamespace.Point3D tip = 2;
   bool has_tip() const;
   void clear_tip();
   static const int kTipFieldNumber = 2;
-  const ::atheer::Point3D& tip() const;
-  ::atheer::Point3D* mutable_tip();
-  ::atheer::Point3D* release_tip();
-  void set_allocated_tip(::atheer::Point3D* tip);
+  const ::myprojectnamespace::Point3D& tip() const;
+  ::myprojectnamespace::Point3D* mutable_tip();
+  ::myprojectnamespace::Point3D* release_tip();
+  void set_allocated_tip(::myprojectnamespace::Point3D* tip);
 
   // int32 id = 1;
   void clear_id();
@@ -359,18 +359,18 @@ class Finger : public ::google::protobuf::MessageLite /* @@protoc_insertion_poin
   ::google::protobuf::int32 id() const;
   void set_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:atheer.Finger)
+  // @@protoc_insertion_point(class_scope:myprojectnamespace.Finger)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
-  ::atheer::Point3D* tip_;
+  ::myprojectnamespace::Point3D* tip_;
   ::google::protobuf::int32 id_;
   mutable int _cached_size_;
   friend struct protobuf_hand_2eproto::TableStruct;
 };
 // -------------------------------------------------------------------
 
-class Point3D : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:atheer.Point3D) */ {
+class Point3D : public ::google::protobuf::MessageLite /* @@protoc_insertion_point(class_definition:myprojectnamespace.Point3D) */ {
  public:
   Point3D();
   virtual ~Point3D();
@@ -467,7 +467,7 @@ class Point3D : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
   float z() const;
   void set_z(float value);
 
-  // @@protoc_insertion_point(class_scope:atheer.Point3D)
+  // @@protoc_insertion_point(class_scope:myprojectnamespace.Point3D)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArenaLite _internal_metadata_;
@@ -489,33 +489,33 @@ class Point3D : public ::google::protobuf::MessageLite /* @@protoc_insertion_poi
 #endif  // __GNUC__
 // HandEvent
 
-// repeated .atheer.Hand hands = 1;
+// repeated .myprojectnamespace.Hand hands = 1;
 inline int HandEvent::hands_size() const {
   return hands_.size();
 }
 inline void HandEvent::clear_hands() {
   hands_.Clear();
 }
-inline const ::atheer::Hand& HandEvent::hands(int index) const {
-  // @@protoc_insertion_point(field_get:atheer.HandEvent.hands)
+inline const ::myprojectnamespace::Hand& HandEvent::hands(int index) const {
+  // @@protoc_insertion_point(field_get:myprojectnamespace.HandEvent.hands)
   return hands_.Get(index);
 }
-inline ::atheer::Hand* HandEvent::mutable_hands(int index) {
-  // @@protoc_insertion_point(field_mutable:atheer.HandEvent.hands)
+inline ::myprojectnamespace::Hand* HandEvent::mutable_hands(int index) {
+  // @@protoc_insertion_point(field_mutable:myprojectnamespace.HandEvent.hands)
   return hands_.Mutable(index);
 }
-inline ::atheer::Hand* HandEvent::add_hands() {
-  // @@protoc_insertion_point(field_add:atheer.HandEvent.hands)
+inline ::myprojectnamespace::Hand* HandEvent::add_hands() {
+  // @@protoc_insertion_point(field_add:myprojectnamespace.HandEvent.hands)
   return hands_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::atheer::Hand >*
+inline ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand >*
 HandEvent::mutable_hands() {
-  // @@protoc_insertion_point(field_mutable_list:atheer.HandEvent.hands)
+  // @@protoc_insertion_point(field_mutable_list:myprojectnamespace.HandEvent.hands)
   return &hands_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::atheer::Hand >&
+inline const ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Hand >&
 HandEvent::hands() const {
-  // @@protoc_insertion_point(field_list:atheer.HandEvent.hands)
+  // @@protoc_insertion_point(field_list:myprojectnamespace.HandEvent.hands)
   return hands_;
 }
 
@@ -523,33 +523,33 @@ HandEvent::hands() const {
 
 // Hand
 
-// repeated .atheer.Finger fingers = 2;
+// repeated .myprojectnamespace.Finger fingers = 1;
 inline int Hand::fingers_size() const {
   return fingers_.size();
 }
 inline void Hand::clear_fingers() {
   fingers_.Clear();
 }
-inline const ::atheer::Finger& Hand::fingers(int index) const {
-  // @@protoc_insertion_point(field_get:atheer.Hand.fingers)
+inline const ::myprojectnamespace::Finger& Hand::fingers(int index) const {
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Hand.fingers)
   return fingers_.Get(index);
 }
-inline ::atheer::Finger* Hand::mutable_fingers(int index) {
-  // @@protoc_insertion_point(field_mutable:atheer.Hand.fingers)
+inline ::myprojectnamespace::Finger* Hand::mutable_fingers(int index) {
+  // @@protoc_insertion_point(field_mutable:myprojectnamespace.Hand.fingers)
   return fingers_.Mutable(index);
 }
-inline ::atheer::Finger* Hand::add_fingers() {
-  // @@protoc_insertion_point(field_add:atheer.Hand.fingers)
+inline ::myprojectnamespace::Finger* Hand::add_fingers() {
+  // @@protoc_insertion_point(field_add:myprojectnamespace.Hand.fingers)
   return fingers_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::atheer::Finger >*
+inline ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger >*
 Hand::mutable_fingers() {
-  // @@protoc_insertion_point(field_mutable_list:atheer.Hand.fingers)
+  // @@protoc_insertion_point(field_mutable_list:myprojectnamespace.Hand.fingers)
   return &fingers_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::atheer::Finger >&
+inline const ::google::protobuf::RepeatedPtrField< ::myprojectnamespace::Finger >&
 Hand::fingers() const {
-  // @@protoc_insertion_point(field_list:atheer.Hand.fingers)
+  // @@protoc_insertion_point(field_list:myprojectnamespace.Hand.fingers)
   return fingers_;
 }
 
@@ -562,16 +562,16 @@ inline void Finger::clear_id() {
   id_ = 0;
 }
 inline ::google::protobuf::int32 Finger::id() const {
-  // @@protoc_insertion_point(field_get:atheer.Finger.id)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Finger.id)
   return id_;
 }
 inline void Finger::set_id(::google::protobuf::int32 value) {
   
   id_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Finger.id)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Finger.id)
 }
 
-// .atheer.Point3D tip = 2;
+// .myprojectnamespace.Point3D tip = 2;
 inline bool Finger::has_tip() const {
   return this != internal_default_instance() && tip_ != NULL;
 }
@@ -579,28 +579,28 @@ inline void Finger::clear_tip() {
   if (GetArenaNoVirtual() == NULL && tip_ != NULL) delete tip_;
   tip_ = NULL;
 }
-inline const ::atheer::Point3D& Finger::tip() const {
-  const ::atheer::Point3D* p = tip_;
-  // @@protoc_insertion_point(field_get:atheer.Finger.tip)
-  return p != NULL ? *p : *reinterpret_cast<const ::atheer::Point3D*>(
-      &::atheer::_Point3D_default_instance_);
+inline const ::myprojectnamespace::Point3D& Finger::tip() const {
+  const ::myprojectnamespace::Point3D* p = tip_;
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Finger.tip)
+  return p != NULL ? *p : *reinterpret_cast<const ::myprojectnamespace::Point3D*>(
+      &::myprojectnamespace::_Point3D_default_instance_);
 }
-inline ::atheer::Point3D* Finger::mutable_tip() {
+inline ::myprojectnamespace::Point3D* Finger::mutable_tip() {
   
   if (tip_ == NULL) {
-    tip_ = new ::atheer::Point3D;
+    tip_ = new ::myprojectnamespace::Point3D;
   }
-  // @@protoc_insertion_point(field_mutable:atheer.Finger.tip)
+  // @@protoc_insertion_point(field_mutable:myprojectnamespace.Finger.tip)
   return tip_;
 }
-inline ::atheer::Point3D* Finger::release_tip() {
-  // @@protoc_insertion_point(field_release:atheer.Finger.tip)
+inline ::myprojectnamespace::Point3D* Finger::release_tip() {
+  // @@protoc_insertion_point(field_release:myprojectnamespace.Finger.tip)
   
-  ::atheer::Point3D* temp = tip_;
+  ::myprojectnamespace::Point3D* temp = tip_;
   tip_ = NULL;
   return temp;
 }
-inline void Finger::set_allocated_tip(::atheer::Point3D* tip) {
+inline void Finger::set_allocated_tip(::myprojectnamespace::Point3D* tip) {
   delete tip_;
   tip_ = tip;
   if (tip) {
@@ -608,7 +608,7 @@ inline void Finger::set_allocated_tip(::atheer::Point3D* tip) {
   } else {
     
   }
-  // @@protoc_insertion_point(field_set_allocated:atheer.Finger.tip)
+  // @@protoc_insertion_point(field_set_allocated:myprojectnamespace.Finger.tip)
 }
 
 // -------------------------------------------------------------------
@@ -620,13 +620,13 @@ inline void Point3D::clear_x() {
   x_ = 0;
 }
 inline float Point3D::x() const {
-  // @@protoc_insertion_point(field_get:atheer.Point3D.x)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Point3D.x)
   return x_;
 }
 inline void Point3D::set_x(float value) {
   
   x_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Point3D.x)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Point3D.x)
 }
 
 // float y = 2;
@@ -634,13 +634,13 @@ inline void Point3D::clear_y() {
   y_ = 0;
 }
 inline float Point3D::y() const {
-  // @@protoc_insertion_point(field_get:atheer.Point3D.y)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Point3D.y)
   return y_;
 }
 inline void Point3D::set_y(float value) {
   
   y_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Point3D.y)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Point3D.y)
 }
 
 // float z = 3;
@@ -648,13 +648,13 @@ inline void Point3D::clear_z() {
   z_ = 0;
 }
 inline float Point3D::z() const {
-  // @@protoc_insertion_point(field_get:atheer.Point3D.z)
+  // @@protoc_insertion_point(field_get:myprojectnamespace.Point3D.z)
   return z_;
 }
 inline void Point3D::set_z(float value) {
   
   z_ = value;
-  // @@protoc_insertion_point(field_set:atheer.Point3D.z)
+  // @@protoc_insertion_point(field_set:myprojectnamespace.Point3D.z)
 }
 
 #ifdef __GNUC__
@@ -671,7 +671,7 @@ inline void Point3D::set_z(float value) {
 // @@protoc_insertion_point(namespace_scope)
 
 
-}  // namespace atheer
+}  // namespace myprojectnamespace
 
 // @@protoc_insertion_point(global_scope)
 
